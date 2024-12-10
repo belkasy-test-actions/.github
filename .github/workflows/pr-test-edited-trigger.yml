@@ -1,0 +1,12 @@
+name: Edited - PR Edited Workflow
+
+on:
+  pull_request:
+    types: [edited]
+
+jobs:
+  check_edited:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Handle PR edited event
+        run: echo "Handling edited event"
